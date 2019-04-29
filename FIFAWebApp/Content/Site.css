@@ -1,0 +1,106 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+@font-face {
+    font-family: 'Champions';
+    src: url("~/fonts/champions-bold-webfont.eot");
+    src: url("~/fonts/champions-bold-webfont.eot?#iefix") format("embedded-opentype"), url("~/fonts/champions-bold-webfont.woff2") format("woff2"), url("~/fonts/champions-bold-webfont.woff") format("woff"), url("~/fonts/champions-bold-webfont.svg#championsbold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champions';
+    src: url("~/fonts/champions-light-webfont.eot");
+    src: url("~/fonts/champions-light-webfont.eot?#iefix") format("embedded-opentype"), url("~/fonts/champions-light-webfont.woff2") format("woff2"), url("~/fonts/champions-light-webfont.woff") format("woff"), url("~/fonts/champions-light-webfont.svg#championslight") format("svg");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Champions';
+    src: url("~/fonts/champions-regular-webfont.eot");
+    src: url("~/fonts/champions-regular-webfont.eot?#iefix") format("embedded-opentype"), url("~/fonts/champions-regular-webfont.woff2") format("woff2"), url("~/fonts/champions-regular-webfont.woff") format("woff"), url("~/fonts/champions-regular-webfont.svg#championsregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    height: 100%;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    color: #00004b;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    width: 100%;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+    padding-top: 20px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.custom-bar {
+    background-color: #06113a;
+    padding: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: -1px 9px 25px -7px rgba(0,0,0,0.52);
+    -moz-box-shadow: -1px 9px 25px -7px rgba(0,0,0,0.52);
+    box-shadow: -1px 9px 25px -7px rgba(0,0,0,0.52);
+}
+
+a:hover {
+    color: #5af7dc;
+    background-color: #00004b !important;
+}
+
+a {
+    color: #fff;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition: 0.9s ease-in-out;
+}
+
+.ucl-gradient {
+    padding-top: 35px;
+    background-image: linear-gradient(to right, #5af7dc, rgba(0,0,0,0));
+}
+
+.banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 10px;
+    background: #000;
+    padding: 10% 0;
+    background: url('img/sky.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* Teams */

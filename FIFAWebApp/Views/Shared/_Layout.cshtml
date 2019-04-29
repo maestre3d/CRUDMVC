@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="~/Content/img/favicon.png">
+    <title>@ViewBag.Title - UEFA Champions League</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @{
+        var CompanyName = "UEFA";
+    }
+</head>
+<body style="background: #f8f8f8;">
+    <div class="navbar navbar-dark bg-dark navbar-fixed-top custom-bar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span style="background-color: #fff;" class="icon-bar"></span>
+                    <span style="background-color: #fff;" class="icon-bar"></span>
+                    <span style="background-color: #fff;" class="icon-bar"></span>
+                </button>
+                <img src="~/Content/img/starball-logo-white.svg" class="navbar-brand animate-bar" />
+                @Html.ActionLink(CompanyName, "Index", "Home", new { area = "" }, new { @class = "navbar-brand animate-bar"})
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    
+                    <!--<li>@Html.ActionLink("Home", "Index", "Home")</li>-->
+                    <li>@Html.ActionLink("Teams", "Teams", "Home")</li>
+                    <li>@Html.ActionLink("Players", "Players", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="ucl-gradient"></div>
+    <div class="body-content">
+        @RenderBody()
+        <hr />
+        <footer class="navbar-fixed-bottom">
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
